@@ -1,0 +1,27 @@
+{% extends 'geekshop/master.html' %}
+
+{% block page_title%}
+Каталог
+{% endblock%}
+
+{% block page_content %}
+
+
+    <hr align="center" width="100%" color="black" />
+    <h1>Каталог оборудования</h1>
+    <ul>
+        <li>
+            
+            <img src="/static/img/dominator.jpg" alt="Датчик уровня топлива" title="ДУТ" width="100" height="100">
+            <br><a href="catalog/dyt/" target="_blank" border="0">Датчик уровня топлива</a>
+        </li>
+           <li>
+            <img src="/static/img/delta.png" alt="Датчик расхода топлива Delta" title="Delta" width="100" height="100">
+            <br><a href="catalog/delta/" target="_blank" border="0">Датчик расхода топлива Delta</a></li>
+        
+        <li> 
+            <img src="/static/img/direct.jpg" alt="Датчик расхода топлива Direct" title="Direcr" width="100" height="100">
+            <br><a href="catalog/direct/" target="_blank" border="0">Датчик расхода топлива Direct </a></li>
+       
+    </ul>
+ {% endblock%}

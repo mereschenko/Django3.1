@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block page_title%} {% endblock%}
+    </title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+ <ul class="menu">
+        <li><a href="/products/">Каталог</a></li>
+        <li><a href="/about">О нас</a></li>
+        <li><a href="/contacts/">Контакты</a></li>
+        <li><a href="/registr/">Регистрация</a></li>
+
+    </ul>
+   {% block page_content %}{% endblock %}
+    <hr align="center" width="100%" color="black" />
+    <br>Все права защищены &copy;2019 <a href="https://geekbrains.ru/" target="_blank">Geekbrains</a>
+</body></html>

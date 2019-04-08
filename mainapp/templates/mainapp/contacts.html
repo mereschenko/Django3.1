@@ -1,0 +1,27 @@
+{% extends 'geekshop/master.html' %}
+
+{% block page_title%}
+Контакты
+{% endblock%}
+
+{% block page_content %}
+    <h1>Контакты</h1>
+    {% for item in contacts %}
+    <li>
+        <span>
+            {{ item }}
+        </span>
+    </li>
+
+    {% endfor %}
+    <br>
+    <hr align="center" width="100%" color="black" />
+    <h3>Наш адрес</h3>
+    <br> г. Киев, ул. Голосеевская 17
+    <br>оф. 201-207
+    <br>Бизнес-центр "Морион"
+    <h3>{{ test }}</h3>
+    <h3>Как нас найти</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.2568368851507!2d30.515134415951014!3d50.39905087946826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4aacb053c9%3A0xb50f28c6de2d410a!2z0YPQuy4g0JPQvtC70L7RgdC10LXQstGB0LrQsNGPLCAxNywg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1547148751352" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'geekshop/master.html' %}
+
+{% block page_title%}
+Регистрация
+{% endblock%}
+{% block page_content %}
+    <hr align="center" width="100%" color="black" />
+    <h1>Регистрация</h1>
+    <form action="#">
+        <br> Ваше имя
+        <input type="text" placeholder="Ваше имя">
+        <br>Пароль
+        <input type="password" placeholder="Ваш пароль">
+        <br>Ваш пол
+        <br>М
+        <input type="radio" name="pol" checked>
+        <br>Ж
+        <input type="radio" name="pol">
+        <br>Ваш email
+        <input type="email" name="email">
+        <br>Номер телефона
+        <input type="text" placeholder="номер телефона">
+        <br>
+        <input type="submit">
+        <input type="reset"> </form>
+{% endblock%}
